@@ -1,0 +1,37 @@
+#DSSA Practicum Capstone 
+
+## Where is the data from
+The data is collected by the Cape May Whale Watch and Research Center
+
+## How was it collected
+Species, behavioral, and environmental data are collected onboard the 98ft MV American Star
+via a team of naturalists and interns, using instruments such as a Simrad NSS evo3 Chart Plotter to get temperature and depth data,
+and a handheld GPS Map 73 to get time and coordinate data.
+Photos were collected onboard as well, using a 300mm zoom lens
+
+##How was the data cleaned/transformed
+The larger dataset was cleaned during a prior project, using the physical records taken on each trip to check and confirm each row of sighting data.
+The photo data was taken and cleaned by extracting a left dorsal, right dorsal, and fluke photo from each sighting.
+If one of the three aformentioned photos were missing from a sighting it was marked as not present
+
+##What program was used to clean the photos
+R Studio was used to clean all the data
+
+##How was the data cleaned and transformed
+In terms of the photo data, as there was no initial dataset to be downloaded, all photos were named for the corresponding humpback they belonged to.
+The name, alternate IDs and dorsal characteristics for each whale from the existing format of the catalog were provided,
+and wrapped in a list function to create a searchable dataset.
+Coordinate data for the map was placed in a base R leaflet map and searched for coordinates that did not occur within a regular range of Cape May NJ
+
+##What are the units for the numeric data
+The main numeric columns were the coordinates and time data
+The time data had units of m/d/y
+The coordinates data had a unit of degrees
+
+##What are the definitions for the column names
+
+##If there are set variable options in your dataset, what are their definitions
+
+##What are the regulations to using the data
+All guidelines must be followed as presented by the Marine Mammal Protection Act of 1972, 
+as well as any voluntary guidelines presented by Whale SENSE in terms of how the data is used
